@@ -10,38 +10,38 @@ import Load from "../components/Load";
 const groupList = [
   {
     imageUrl: "user.png",
+    name: "주식처럼 한강코스 우상향 가즈아",
+    email: "같이 운동해요",
+    bgImage: "group.png",
+  },
+  {
+    imageUrl: "user.png",
+    name: "주식처럼 한강코스 우상향 가즈아",
+    email: "같이 운동해요",
+    bgImage: "group.png",
+  },
+  {
+    imageUrl: "user.png",
+    name: "주식처럼 한강코스 우상향 가즈아",
+    email: "같이 운동해요",
+    bgImage: "group.png",
+  },
+  {
+    imageUrl: "user.png",
+    name: "주식처럼 한강코스 우상향 가즈아",
+    email: "같이 운동해요",
+    bgImage: "group.png",
+  },
+  {
+    imageUrl: "user.png",
     name: "Aliqa Macale",
-    email: "support@gmail.com",
-    bgImage: "group.png",
-  },
-  {
-    imageUrl: "user.png",
-    name: "Hendrix Stamp",
-    email: "support@gmail.com",
-    bgImage: "group.png",
-  },
-  {
-    imageUrl: "user.png",
-    name: "Stephen Grider",
-    email: "support@gmail.com",
-    bgImage: "group.png",
-  },
-  {
-    imageUrl: "user.png",
-    name: "Mohannad Zitoun",
-    email: "support@gmail.com",
-    bgImage: "group.png",
-  },
-  {
-    imageUrl: "user.png",
-    name: "Aliqa Macale",
-    email: "support@gmail.com",
+    email: "같이 운동해요",
     bgImage: "group.png",
   },
   {
     imageUrl: "user.png",
     name: "Surfiya Zakir",
-    email: "support@gmail.com",
+    email: "같이 운동해요",
     bgImage: "group.png",
   },
 ];
@@ -89,17 +89,18 @@ function Badge() {
                             {value.email}
                           </p>
                           <span className="position-absolute right-15 top-0 d-flex align-items-center">
-                            <a
+                            {/* <a
                               href="/defaultgroup"
                               className="d-lg-block d-none"
+                              style={{display:"hidden !important" }}
                             >
                               <i className="feather-video btn-round-md font-md bg-primary-gradiant text-white"></i>
-                            </a>
+                            </a> */}
                             <a
                               href="/defaultgroup"
                               className="text-center p-2 lh-24 w100 ms-1 ls-3 d-inline-block rounded-xl bg-current font-xsssss fw-700 ls-lg text-white"
                             >
-                              FOLLOW
+                              참여하기
                             </a>
                           </span>
                         </div>

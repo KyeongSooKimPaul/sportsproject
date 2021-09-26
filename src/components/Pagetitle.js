@@ -10,10 +10,10 @@ function Pagetitle () {
                 <form action="#" className="pt-0 pb-0 ms-auto">
                     <div className="search-form-2 ms-2">
                         <i className="ti-search font-xss"></i>
-                        <input type="text" className="form-control text-grey-500 mb-0 bg-greylight theme-dark-bg border-0" placeholder="Search here." />
+                        <input type="text" className="form-control text-grey-500 mb-0 bg-greylight theme-dark-bg border-0" placeholder="검색어 입력" />
                     </div>
                 </form>
-                <a href="/" className="btn-round-md ms-2 bg-greylight theme-dark-bg rounded-3"><i className="feather-filter font-xss text-grey-500"></i></a>
+                {/* <a href="/" className="btn-round-md ms-2 bg-greylight theme-dark-bg rounded-3"><i className="feather-filter font-xss text-grey-500"></i></a> */}
                 </h2>
             </div>            
         );

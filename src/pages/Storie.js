@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Leftnav from "../components/Leftnav";
 import Rightchat from "../components/Rightchat";
 import Pagetitle from "../components/Pagetitle";
-
+import { Link } from "react-router-dom";
 import Popupchat from "../components/Popupchat";
 
 const storyList = [
@@ -97,7 +97,15 @@ function Storie() {
 
                 <div className="row ps-2 pe-1">
                   {storyList.map((value, index) => (
+  
+  
+
+
                     <div key={index} className="col-md-3 col-xss-6 pe-2 ps-2">
+                         <Link
+   to="/Userpage"
+
+ >
                       <div
                         className="card h300 d-block border-0 shadow-xss rounded-3 bg-gradiant-bottom overflow-hidden mb-3 bg-image-cover"
                         style={{
@@ -118,7 +126,9 @@ function Storie() {
                           </h4>
                         </div>
                       </div>
+                      </Link>
                     </div>
+                   
                   ))}
                 </div>
               </div>
