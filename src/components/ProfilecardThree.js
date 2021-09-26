@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 
-class ProfilecardThree extends Component {
-    render() {
+function ProfilecardThree () {
+ 
         return (
             <div className="card w-100 border-0 p-0 bg-white shadow-xss rounded-xxl">
                 <div className="card-body h250 p-0 rounded-xxl overflow-hidden m-3"><img src="https://via.placeholder.com/1200x250.png" alt="avater" /></div>
@@ -47,7 +47,7 @@ class ProfilecardThree extends Component {
             </div>
              
         );
-    }
+
 }
 
 export default ProfilecardThree;

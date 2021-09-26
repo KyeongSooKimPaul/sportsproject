@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 
-class Popupchat extends Component {
-    render() {
+function Popupchat () {
+
         return (
             <div></div>     
         );
-    }
+    
 }
 
 export default Popupchat;

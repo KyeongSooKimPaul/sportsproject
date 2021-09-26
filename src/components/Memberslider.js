@@ -46,8 +46,8 @@ const memberList = [
     },
 ]
 
-class Memberslider extends Component {
-    render() {
+function Memberslider () {
+  
         const membersettings = {
             arrows: false,
             dots: false,
@@ -74,7 +74,7 @@ class Memberslider extends Component {
                 ))}
             </Slider>
         );
-    }
+    
 }
 
 export default Memberslider;

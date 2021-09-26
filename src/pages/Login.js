@@ -2,8 +2,8 @@ import React, { Component , Fragment } from "react";
 
 
 
-class Login extends Component {
-    render() {
+function Login () {
+  
         return (
             <Fragment> 
                 <div className="main-wrap">
@@ -58,7 +58,7 @@ class Login extends Component {
                 </div>
             </Fragment>
         );
-    }
+    
 }
 
 export default Login;

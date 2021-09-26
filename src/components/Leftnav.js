@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 
 
-class Leftnav extends Component {
-    render() {
+function Leftnav () {
+
         return (
             <div className="navigation scroll-bar">
                 <div className="container ps-0 pe-0">
@@ -47,7 +47,7 @@ class Leftnav extends Component {
                 </div>
             </div>
         );
-    }
+    
 }
 
 export default Leftnav;

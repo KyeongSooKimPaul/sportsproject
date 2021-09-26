@@ -46,8 +46,8 @@ const storyList = [
     },
 ]
 
-class Storyslider extends Component {
-    render() {
+function Storyslider () {
+  
         const storysettings = {
             arrows: false,
             dots: false,
@@ -79,7 +79,7 @@ class Storyslider extends Component {
                 ))}
             </Slider>
         );
-    }
+    
 }
 
 export default Storyslider;

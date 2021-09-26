@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 
-class ProfilecardTwo extends Component {
-    render() {
+function ProfilecardTwo () {
+ 
         return (
             <div className="card w-100 shadow-xss rounded-xxl border-0 mb-3 mt-3 overflow-hidden">
                 <div className="card-body position-relative h240 bg-image-cover bg-image-center" 
@@ -56,7 +56,7 @@ class ProfilecardTwo extends Component {
             </div>
             
         );
-    }
+    
 }
 
 export default ProfilecardTwo;

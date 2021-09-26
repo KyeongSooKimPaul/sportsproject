@@ -1,8 +1,8 @@
 import React, { Component , Fragment } from "react";
 
 
-class Register extends Component {
-    render() {
+function Register () {
+
         return (
             <Fragment> 
                 <div className="main-wrap">
@@ -62,7 +62,7 @@ class Register extends Component {
                 </div>
             </Fragment>
         );
-    }
+    
 }
 
 export default Register;

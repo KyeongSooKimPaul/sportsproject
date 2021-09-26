@@ -59,11 +59,7 @@ const newDemoList = [
         title: 'Message',
         url: 'defaultmessage'
     },
-    {
-        imageUrl: 'job.jpg',
-        title: 'Job',
-        url: 'defaultjob'
-    },
+ 
     {
         imageUrl: 'hotel.jpg',
         title: 'Hotel',
@@ -190,8 +186,8 @@ const newDemoList = [
 ]
 
 
-class Demo extends Component {
-    render() {
+function Demo ()  {
+    
         return (
             <div>
 
@@ -313,7 +309,7 @@ class Demo extends Component {
 
             </div>
         );
-    }
+    
 }
 
 export default Demo;

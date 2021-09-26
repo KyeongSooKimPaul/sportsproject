@@ -1,8 +1,8 @@
 import React, { Component , Fragment } from "react";
 import Header from '../components/Header';
 
-class Notfound extends Component {
-    render() {
+function Notfound () {
+  
         return (
             <Fragment> 
                 <Header />
@@ -22,7 +22,7 @@ class Notfound extends Component {
                 </div>  
             </Fragment>
         );
-    }
+    
 }
 
 export default Notfound;

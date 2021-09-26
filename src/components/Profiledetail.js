@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 
 
-class Profiledetail extends Component {
-    render() {
+function Profiledetail () {
+ 
         return (
             <div className="card w-100 shadow-xss rounded-xxl border-0 mb-3">
                 <div className="card-body d-block p-4">
@@ -28,7 +28,7 @@ class Profiledetail extends Component {
                 </div>
             </div>
         );
-    }
+    
 }
 
 export default Profiledetail;

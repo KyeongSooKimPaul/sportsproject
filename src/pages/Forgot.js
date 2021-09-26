@@ -1,8 +1,8 @@
 import React, { Component , Fragment } from "react";
 
 
-class Forgot extends Component {
-    render() {
+function Forgot () {
+   
         return (
             <Fragment> 
                 <div className="main-wrap">
@@ -56,7 +56,7 @@ class Forgot extends Component {
                 </div>
             </Fragment>
         );
-    }
+    
 }
 
 export default Forgot;

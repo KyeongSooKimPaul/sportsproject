@@ -24,8 +24,8 @@ const eventsList = [
     },
 ]
 
-class Events extends Component {
-    render() {
+function Events () {
+  
         return (
             <div className="card w-100 shadow-xss rounded-xxl border-0 mb-3">
                 <div className="card-body d-flex align-items-center p-4">
@@ -43,7 +43,7 @@ class Events extends Component {
                 
             </div>
         );
-    }
+    
 }
 
 export default Events;

@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Leftnav from '../components/Leftnav';
 import Rightchat from '../components/Rightchat';
-import Appfooter from '../components/Appfooter';
+
 import Popupchat from '../components/Popupchat';
 
 
-class Account extends Component {
-    render() {
+function Account () {
+  
         return (
             <Fragment> 
                 <Header />
@@ -135,10 +135,10 @@ class Account extends Component {
                 </div>
 
                 <Popupchat />
-                <Appfooter /> 
+  
             </Fragment>
         );
-    }
+    
 }
 
 export default Account;

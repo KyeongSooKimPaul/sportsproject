@@ -6,8 +6,8 @@ import Leftnav from '../components/Leftnav';
 import Rightchat from '../components/Rightchat';
 
 
-class Password extends Component {
-    render() {
+function Password () {
+
         return (
             <Fragment> 
 
@@ -73,7 +73,7 @@ class Password extends Component {
 
             </Fragment>
         );
-    }
+    
 }
 
 export default Password;

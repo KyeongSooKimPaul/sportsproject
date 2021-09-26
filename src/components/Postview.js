@@ -1,20 +1,19 @@
-import React,{Component} from 'react';
+import React,{Component, useState} from 'react';
 
 
-class Postview extends Component {
-    state = {
-        isOpen: false
-    };
+function Postview () {
 
-    toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
-    toggleActive = () => this.setState({ isActive: !this.state.isActive });
+    const [isOpen, setisOpen] = useState(false)
+    const [isActive, setisActive] = useState(false)
+
+    const toggleOpen = () => setisOpen(!isOpen);
+    const toggleActive = () => setisActive(!isActive);
+    const {user ,time , des, avater , postimage , postvideo ,id } = ""
     
-    render() {
+        // const {user ,time , des, avater , postimage , postvideo ,id } = props;
         
-        const {user ,time , des, avater , postimage , postvideo ,id } = this.props;
-        
-        const menuClass = `${this.state.isOpen ? " show" : ""}`;
-        const emojiClass = `${this.state.isActive ? " active" : ""}`;
+        const menuClass = `${isOpen ? " show" : ""}`;
+        const emojiClass = `${isActive ? " active" : ""}`;
 
         return (
             <div className="card w-100 shadow-xss rounded-xxl border-0 p-4 mb-3">
@@ -44,7 +43,7 @@ class Postview extends Component {
                 </div>
                 : ''}
                 <div className="card-body d-flex p-0">
-                    <div className="emoji-bttn pointer d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss me-2" onClick={this.toggleActive}><i className="feather-thumbs-up text-white bg-primary-gradiant me-1 btn-round-xs font-xss"></i> <i className="feather-heart text-white bg-red-gradiant me-2 btn-round-xs font-xss"></i>2.8K Like</div>
+                    <div className="emoji-bttn pointer d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss me-2" onClick={toggleActive}><i className="feather-thumbs-up text-white bg-primary-gradiant me-1 btn-round-xs font-xss"></i> <i className="feather-heart text-white bg-red-gradiant me-2 btn-round-xs font-xss"></i>2.8K Like</div>
                     <div className={`emoji-wrap pointer ${emojiClass}`}>
                         <ul className="emojis list-inline mb-0">
                             <li className="emoji list-inline-item"><i className="em em---1"></i> </li>
@@ -58,7 +57,7 @@ class Postview extends Component {
                         </ul>
                     </div>
                     <a href="/defaultvideo" className="d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss"><i className="feather-message-circle text-dark text-grey-900 btn-round-sm font-lg"></i><span className="d-none-xss">22 Comment</span></a>
-                    <div className={`pointer ms-auto d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss ${menuClass}`} id={`dropdownMenu${id}`} data-bs-toggle="dropdown" aria-expanded="false" onClick={this.toggleOpen}><i className="feather-share-2 text-grey-900 text-dark btn-round-sm font-lg"></i><span className="d-none-xs">Share</span></div>
+                    <div className={`pointer ms-auto d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss ${menuClass}`} id={`dropdownMenu${id}`} data-bs-toggle="dropdown" aria-expanded="false" onClick={toggleOpen}><i className="feather-share-2 text-grey-900 text-dark btn-round-sm font-lg"></i><span className="d-none-xs">Share</span></div>
                     <div className={`dropdown-menu dropdown-menu-end p-4 rounded-xxl border-0 shadow-lg right-0 ${menuClass}`} aria-labelledby={`dropdownMenu${id}`}>
                         <h4 className="fw-700 font-xss text-grey-900 d-flex align-items-center">Share <i className="feather-x ms-auto font-xssss btn-round-xs bg-greylight text-grey-900 me-2"></i></h4>
                         <div className="card-body p-0 d-flex">
@@ -86,7 +85,7 @@ class Postview extends Component {
                 </div>
             </div>
         );
-    }
+    
 }
 
 export default Postview;

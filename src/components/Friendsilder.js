@@ -46,8 +46,8 @@ const memberList = [
     },
 ]
 
-class Friendsilder extends Component {
-    render() {
+function Friendsilder () {
+  
         const friendsettings = {
             arrows: false,
             dots: false,
@@ -72,7 +72,7 @@ class Friendsilder extends Component {
                 ))}
             </Slider>
         );
-    }
+    
 }
 
 export default Friendsilder;

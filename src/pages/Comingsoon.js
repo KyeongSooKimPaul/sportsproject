@@ -1,8 +1,8 @@
 import React, { Component , Fragment } from "react";
 import Header from '../components/Header';
 
-class Comingsoon extends Component {
-    render() {
+function Comingsoon () {
+  
         return (
             <Fragment> 
                 <Header />
@@ -39,7 +39,7 @@ class Comingsoon extends Component {
                 </div>  
             </Fragment>    
         );
-    }
+    
 }
 
 export default Comingsoon;
