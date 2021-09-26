@@ -18,34 +18,30 @@ import Postview from "../components/Postview";
 import Load from "../components/Load";
 import Profilephoto from "../components/Profilephoto";
 import { gql } from "@apollo/client";
-import { useMutation, useQuery } from '@apollo/client';
+import { useMutation, useQuery } from "@apollo/client";
 
 const IS_LOGGED_IN = gql`
-query{
-    users{
+  query {
+    users {
       name
     }
   }
 `;
 
-
-
 function Home() {
-    const { loading, error, data } = useQuery(IS_LOGGED_IN, {
-  
-        onCompleted: (data) => {
-          console.log('dataForOrder4', data);
-       
-          if (data !== null) {
-            console.log('dataForOrder2', data);
-          }
-        
-          return;
-        },
-      });
+  const { loading, error, data } = useQuery(IS_LOGGED_IN, {
+    onCompleted: (data) => {
+      console.log("dataForOrder4", data);
+
+      if (data !== null) {
+        console.log("dataForOrder2", data);
+      }
+
+      return;
+    },
+  });
   return (
     <Fragment>
-
       <Header />
       <Leftnav />
       <Rightchat />
@@ -75,6 +71,7 @@ function Home() {
                   time="22 min ago"
                   des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus."
                 />
+
                 <Postview
                   id="33"
                   postvideo=""
