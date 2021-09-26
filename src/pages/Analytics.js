@@ -78,7 +78,7 @@ function Analytics() {
         <div className="middle-sidebar-bottom">
           <div className="middle-sidebar-left pe-0">
             <div className="row">
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="card w-100 border-0 shadow-none p-5 rounded-xxl bg-lightblue2 mb-3">
                   <div className="row">
                     <div className="col-lg-6">
@@ -106,7 +106,7 @@ function Analytics() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-3 pe-2">
                 <div
                   className="card w-100 border-0 shadow-none p-4 rounded-xxl mb-3"
@@ -115,9 +115,9 @@ function Analytics() {
                   <div className="card-body d-flex p-0">
                     <i className="btn-round-lg d-inline-block me-3 bg-primary-gradiant feather-home font-md text-white"></i>
                     <h4 className="text-primary font-xl fw-700">
-                      2.3M{" "}
+                      4개{" "}
                       <span className="fw-500 mt-0 d-block text-grey-500 font-xssss">
-                        day visiter
+                        참여중인 그룹
                       </span>
                     </h4>
                   </div>
@@ -131,9 +131,9 @@ function Analytics() {
                   <div className="card-body d-flex p-0">
                     <i className="btn-round-lg d-inline-block me-3 bg-secondary feather-lock font-md text-white"></i>
                     <h4 className="text-secondary font-xl fw-700">
-                      44.6K{" "}
+                      6개{" "}
                       <span className="fw-500 mt-0 d-block text-grey-500 font-xssss">
-                        total user
+                        참여했던 라이브
                       </span>
                     </h4>
                   </div>
