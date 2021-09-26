@@ -173,7 +173,7 @@ class Email extends Component {
                                                 
                                             <li key={index} >
                                                 
-                                                <Link to="/defaultemailopen" className={`rounded-3 ${value.read}`} >
+                                                <Link to="/defaultmessage" className={`rounded-3 ${value.read}`} >
                                                     <div className="form-check mt-1">
                                                         <input className="form-check-input" type="checkbox" id="blankCheckbox1" value="option1" />
                                                         <label className="text-grey-500 font-xssss" htmlFor="blankCheckbox1"></label>
