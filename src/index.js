@@ -71,7 +71,7 @@ import { getMainDefinition } from "@apollo/client/utilities";
 
 const link = new WebSocketLink({
   // uri: `ws://localhost:4000/`,
-  uri: `http://13.125.214.83:4000/`,
+  uri: `ws://13.125.214.83:4000/`,
   options: {
     reconnect: true,
   },
