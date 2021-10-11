@@ -23,7 +23,7 @@ function Settings() {
                   <div className="row">
                     <div className="col-lg-12">
                       <h4 className="mb-4 font-xxl fw-700 mont-font mb-lg-5 mb-4 font-md-xs">
-                      마이페이지
+                        마이페이지
                       </h4>
                       <div className="nav-caption fw-600 font-xssss text-grey-500 mb-2">
                         Genaral
@@ -41,8 +41,19 @@ function Settings() {
                             <i className="ti-angle-right font-xsss text-grey-500 ms-auto mt-3"></i>
                           </Link>
                         </li>
-                        
-                        <li className="list-inline-item d-block me-0">
+                        <li className="list-inline-item d-block border-bottom me-0">
+                          <Link
+                            to="/accountinformation"
+                            className="pt-2 pb-2 d-flex align-items-center"
+                          >
+                            <i className="btn-round-md bg-red-gradiant text-white feather-twitter font-md me-3"></i>{" "}
+                            <h4 className="fw-600 font-xsss mb-0 mt-0">
+                              관심사 설정
+                            </h4>
+                            <i className="ti-angle-right font-xsss text-grey-500 ms-auto mt-3"></i>
+                          </Link>
+                        </li>
+                        {/* <li className="list-inline-item d-block me-0">
                           <Link
                             to="/socialaccount"
                             className="pt-2 pb-2 d-flex align-items-center"
@@ -53,14 +64,13 @@ function Settings() {
                             </h4>
                             <i className="ti-angle-right font-xsss text-grey-500 ms-auto mt-3"></i>
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
 
                       <div className="nav-caption fw-600 font-xsss text-grey-500 mb-2">
                         Acount
                       </div>
                       <ul className="list-inline mb-4">
-                    
                         <li className="list-inline-item d-block  me-0">
                           <Link
                             to="/password"
@@ -97,7 +107,9 @@ function Settings() {
                             className="pt-2 pb-2 d-flex align-items-center"
                           >
                             <i className="btn-round-md bg-primary-gradiant text-white feather-help-circle font-md me-3"></i>{" "}
-                            <h4 className="fw-600 font-xsss mb-0 mt-0">자주 묻는 질문</h4>
+                            <h4 className="fw-600 font-xsss mb-0 mt-0">
+                              자주 묻는 질문
+                            </h4>
                             <i className="ti-angle-right font-xsss text-grey-500 ms-auto mt-3"></i>
                           </a>
                         </li>

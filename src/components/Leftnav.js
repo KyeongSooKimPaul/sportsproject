@@ -15,7 +15,7 @@ function Leftnav() {
               <li>
                 <Link to="/defaultevent" className="nav-content-bttn open-font">
                   <i className="feather-tv btn-round-md bg-blue-gradiant me-3"></i>
-                  <span>LIVE</span>
+                  <span>LIVE 모임</span>
                 </Link>
               </li>
 
@@ -34,13 +34,19 @@ function Leftnav() {
                   <span>친구 찾기</span>
                 </Link>
               </li>
-
+              <li>
+                <Link to="/friendslist" className="nav-content-bttn open-font">
+                  <i className="feather-zap btn-round-md bg-mini-gradiant me-3"></i>
+                  <span>친구목록</span>
+                </Link>
+              </li>
               <li>
                 <Link to="/defaultgroup" className="nav-content-bttn open-font">
                   <i className="feather-zap btn-round-md bg-mini-gradiant me-3"></i>
                   <span>그룹찾기</span>
                 </Link>
               </li>
+            
               <li>
                 <Link to="/userpage" className="nav-content-bttn open-font">
                   <i className="feather-user btn-round-md bg-primary-gradiant me-3"></i>

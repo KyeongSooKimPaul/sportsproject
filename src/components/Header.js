@@ -48,7 +48,7 @@ function Header() {
           <i className="feather-search font-sm text-grey-400"></i>
           <input
             type="text"
-            placeholder="Start typing to search.."
+            placeholder="자신에게 꼭 맞는 모임을 찾아보세요"
             className="bg-grey border-0 lh-32 pt-2 pb-2 ps-5 pe-3 font-xssss fw-500 rounded-xl w350 theme-dark-bg"
           />
         </div>
@@ -193,7 +193,7 @@ function Header() {
                     className="nav-content-bttn open-font"
                   >
                     <i className="feather-tv btn-round-md bg-blue-gradiant me-3"></i>
-                    <span>LIVE</span>
+                    <span>LIVE 모임</span>
                   </Link>
                 </li>
                 <li>
@@ -205,13 +205,19 @@ function Header() {
 
                 <li>
                   <Link
-                    to="/defaultstorie"
+                    to="/findfriends"
                     className="nav-content-bttn open-font"
                   >
                     <i className="feather-globe btn-round-md bg-mini-gradiant me-3"></i>
                     <span>친구 찾기</span>
                   </Link>
                 </li>
+                <li>
+                <Link to="/friendslist" className="nav-content-bttn open-font">
+                  <i className="feather-zap btn-round-md bg-mini-gradiant me-3"></i>
+                  <span>친구목록</span>
+                </Link>
+              </li>
                 <li>
                   <Link
                     to="/defaultgroup"

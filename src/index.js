@@ -13,10 +13,19 @@ import Badge from "./pages/Badge";
 import Group from "./pages/Group";
 import Storie from "./pages/Storie";
 import Member from "./pages/Member";
+import Findfrends from "./pages/Findfrends";
+import Friendslist from "./pages/Friendslist";
+
+
+
+import ChatPage from "./pages/ChatPage";
+
 import Email from "./pages/Email";
 import Emailopen from "./pages/Emailopen";
 import Settings from "./pages/Settings";
 import Account from "./pages/Account";
+import Makeroom from "./pages/Makeroom";
+
 import Contactinfo from "./pages/Contactinfo";
 import Socialaccount from "./pages/Socialaccount";
 import Password from "./pages/Password";
@@ -50,14 +59,48 @@ import Analytics from "./pages/Analytics";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
+import { WebSocketLink } from "@apollo/client/link/ws";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  split,
+  HttpLink,
+} from "@apollo/client";
+import { getMainDefinition } from "@apollo/client/utilities";
 
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+const link = new WebSocketLink({
+  uri: `ws://localhost:4000/`,
+  options: {
+    reconnect: true,
+  },
+});
+// const httpLink = new HttpLink({
+//   uri: 'http://localhost:4000/'
+// });
+// const splitLink = split(
+//   ({ query }) => {
+//     const definition = getMainDefinition(query);
+//     return (
+//       definition.kind === 'OperationDefinition' &&
+//       definition.operation === 'subscription'
+//     );
+//   },
+//   wsLink,
+//   httpLink,
+// );
 
 const client = new ApolloClient({
-  uri: "http://18.220.98.98:4000/",
-  // uri: "http://localhost:4000/",
+  link,
+  uri: "http://localhost:4000/",
   cache: new InMemoryCache(),
 });
+
+// const client = new ApolloClient({
+//   // uri: "http://18.220.98.98:4000/",
+//   uri: "http://localhost:4000/",
+//   cache: new InMemoryCache(),
+// });
 
 function Root() {
   return (
@@ -81,11 +124,19 @@ function Root() {
           path={`${process.env.PUBLIC_URL}/defaultstorie`}
           component={Storie}
         />
+
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/chat`}
+          component={ChatPage}
+        />
+
         <Route
           exact
           path={`${process.env.PUBLIC_URL}/defaultemailbox`}
           component={Email}
         />
+        <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo} />
         <Route
           exact
           path={`${process.env.PUBLIC_URL}/defaultemailopen`}
@@ -114,9 +165,26 @@ function Root() {
         />
         <Route
           exact
+          path={`${process.env.PUBLIC_URL}/makeroom`}
+          component={Makeroom}
+        />
+        <Route
+          exact
           path={`${process.env.PUBLIC_URL}/defaultmember`}
           component={Member}
         />
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/findfriends`}
+          component={Findfrends}
+        />
+
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/friendslist`}
+          component={Friendslist}
+        />
+
         <Route
           exact
           path={`${process.env.PUBLIC_URL}/contactinformation`}
@@ -188,6 +256,13 @@ function Root() {
           path={`${process.env.PUBLIC_URL}/singleproduct`}
           component={Singleproduct}
         />
+        {/* <Route
+          exact
+          // path={`${process.env.PUBLIC_URL}/singleproduct`}
+          path="/singleproduct/:queryparmas"
+          children={<Singleproduct />}
+        /> */}
+
         <Route exact path={`${process.env.PUBLIC_URL}/cart`} component={Cart} />
         <Route
           exact
