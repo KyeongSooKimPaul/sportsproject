@@ -70,37 +70,22 @@ import {
 import { getMainDefinition } from "@apollo/client/utilities";
 
 const link = new WebSocketLink({
-  uri: `ws://localhost:4000/`,
+  // uri: `ws://localhost:4000/`,
+  uri: `http://13.125.214.83:4000/`,
   options: {
     reconnect: true,
   },
 });
-// const httpLink = new HttpLink({
-//   uri: 'http://localhost:4000/'
-// });
-// const splitLink = split(
-//   ({ query }) => {
-//     const definition = getMainDefinition(query);
-//     return (
-//       definition.kind === 'OperationDefinition' &&
-//       definition.operation === 'subscription'
-//     );
-//   },
-//   wsLink,
-//   httpLink,
-// );
+
 
 const client = new ApolloClient({
   link,
-  uri: "http://localhost:4000/",
+  uri: `http://13.125.214.83:4000/`,
+  // uri: "http://localhost:4000/",
   cache: new InMemoryCache(),
 });
 
-// const client = new ApolloClient({
-//   // uri: "http://18.220.98.98:4000/",
-//   uri: "http://localhost:4000/",
-//   cache: new InMemoryCache(),
-// });
+
 
 function Root() {
   return (
